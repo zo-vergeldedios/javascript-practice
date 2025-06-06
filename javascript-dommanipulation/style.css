@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 40px 0 20px 0;
+  color: aqua;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: darkblue;
+  background-color: aqua;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  background-color: white;
+  cursor: pointer;
+}
+
+input {
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.task {
+  background-color: lightgray;
+  color: black;
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.task:hover {
+  background-color: white;
+  cursor: no-drop;
+}
