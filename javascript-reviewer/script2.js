@@ -222,4 +222,63 @@ const output5 = users
   });
 
 //
-console.log(output5);
+// console.log(output5);
+
+const output6 = users
+  .filter((user) => {
+    return user.active && user.score >= 80;
+  })
+  .sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  })
+  .map((user) => {
+    return {
+      name: user.name,
+      score: user.score,
+    };
+  });
+
+console.log(output6);
+
+const threeNames = (name1, name2, name3) =>
+  console.log(`Hello ${name1}, ${name2}, and ${name3}!`);
+threeNames("Zo", "Nath", "Luke");
+
+const products = [
+  { product: "Mang Tomas", price: 60, stock: 0 },
+  { product: "Banana Ketchup", price: 50, stock: 3 },
+  { product: "Toasted Garlic", price: 95, stock: 5 },
+  { product: "Toasted Onion", price: 120, stock: 0 },
+  { product: "Garlic Parmesian", price: 140, stock: 2 },
+];
+
+const sortedItems = products
+  .sort((a, b) => {
+    return b.price - a.price;
+  })
+  .filter((item) => {
+    return item.stock > 0;
+  })
+  .map((display) => {
+    return { product: `$ ${display.price}` };
+  });
+
+console.log(sortedItems);
+
+const user = { name: "Zo", age: 29, location: { city: "LA", country: "USA" } };
+console.log(`${user.name} lives in ${user.location.city}.`);
+
+const oldState = { score: 42, active: true };
+
+const newState = { ...oldState, level: 3 };
+console.log(newState);
+console.log(oldState);
+
+let numberCount = document.getElementById("numberCounter");
+let currentNumber = 0;
+// let addButton = document.getElementById("ButtonCounter");
+
+ButtonCounter.addEventListener("click", function () {
+  currentNumber = currentNumber + 1;
+  numberCount.textContent = currentNumber;
+});
