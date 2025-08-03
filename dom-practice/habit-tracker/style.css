@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+.container {
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+input,
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.warning {
+  color: red;
+  font-size: 0.9rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  background: #0056b3;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+li:hover {
+  cursor: cell;
+}
+
+/* li.checked span {
+  text-decoration: line-through;
+  color: gray;
+} */
+
+.checked {
+  text-decoration: line-through;
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
