@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2600.png"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <h1><i class="fa-solid fa-sun"></i> Weather App</h1>
+    </header>
+
+    <main>
+      <section class="weather-form">
+        <label for="cityInput">
+          <i class="fa-solid fa-city"></i> Enter City
+        </label>
+        <input
+          id="cityInput"
+          type="text"
+          placeholder="e.g., San Francisco"
+          autocomplete="off"
+        />
+
+        <button id="checkButton" type="button">
+          <i class="fa-solid fa-cloud-sun"></i> Check Weather
+        </button>
+      </section>
+
+      <section class="weather-results" aria-live="polite">
+        <p>
+          <i class="fa-solid fa-temperature-three-quarters"></i> Celsius:
+          <span id="tempC">--</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-temperature-high"></i> Fahrenheit:
+          <span id="tempF">--</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-cloud"></i> Condition:
+          <span id="currentWeather">--</span>
+        </p>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Powered by <span class="highlight">Zo's Weather App</span></p>
+    </footer>
+  </body>
+</html>
